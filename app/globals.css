@@ -1,0 +1,137 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #111111;
+  color: #252525;
+  font-family: "Noto Serif JP", "Yu Mincho", serif;
+}
+
+.certificate {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background:
+    radial-gradient(circle at center, #292929, #0d0d0d 75%);
+}
+
+.certificate-inner {
+  width: 100%;
+  max-width: 760px;
+  padding: 65px 45px;
+  text-align: center;
+  background: #f8f6f0;
+  border: 2px solid #b99a61;
+  outline: 1px solid #b99a61;
+  outline-offset: 9px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+}
+
+.brand {
+  color: #aa8748;
+  font-size: 34px;
+  font-weight: bold;
+  letter-spacing: 8px;
+  margin: 0 0 20px;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(32px, 7vw, 54px);
+  font-weight: normal;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: #9a7942;
+  margin-top: 12px;
+}
+
+.line {
+  width: 70%;
+  height: 1px;
+  background: #b99a61;
+  margin: 35px auto;
+}
+
+.label {
+  color: #8a7758;
+  font-size: 13px;
+  letter-spacing: 3px;
+  margin: 20px 0 10px;
+}
+
+h2 {
+  font-size: clamp(26px, 5vw, 38px);
+  font-weight: normal;
+  letter-spacing: 5px;
+  margin: 15px 0 35px;
+}
+
+.message {
+  font-size: clamp(13px, 2.5vw, 16px);
+  line-height: 2.5;
+  letter-spacing: 1px;
+  margin: 35px 0;
+}
+
+.message p {
+  margin: 0;
+}
+
+.date {
+  font-family: Georgia, serif;
+  font-size: 21px;
+  letter-spacing: 2px;
+  margin: 10px 0 30px;
+}
+
+.trainer-label {
+  margin-top: 25px;
+}
+
+.trainer {
+  font-size: 22px;
+  letter-spacing: 4px;
+  margin-top: 10px;
+}
+
+.footer {
+  margin-top: 55px;
+  font-family: Georgia, serif;
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: #a58a5c;
+}
+
+@media (max-width: 600px) {
+  .certificate {
+    padding: 25px 18px;
+  }
+
+  .certificate-inner {
+    padding: 45px 20px;
+  }
+
+  .line {
+    width: 85%;
+    margin: 25px auto;
+  }
+
+  .message {
+    letter-spacing: 0;
+  }
+}
